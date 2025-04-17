@@ -7,12 +7,7 @@
 // Classe TicTacToe
 class TicTacToe {
 private:
-    std::array<std::array<char, 3>, 3> board; // Tabuleiro do jogo
-    std::mutex board_mutex; // Mutex para controle de acesso ao tabuleiro
-    std::condition_variable turn_cv; // Variável de condição para alternância de turnos
-    char current_player; // Jogador atual ('X' ou 'O')
-    bool game_over; // Estado do jogo
-    char winner; // Vencedor do jogo
+
 
 public:
     TicTacToe() {
@@ -29,22 +24,6 @@ public:
         // Utilizar variável de condição para alternância de turnos
     }
 
-    bool check_win(char player) {
-        // Verificar se o jogador atual venceu o jogo
-    }
-
-    bool check_draw() {
-        // Verificar se houve um empate
-    }
-
-    bool is_game_over() {
-        // Retornar se o jogo terminou
-    }
-
-    char get_winner() {
-        // Retornar o vencedor do jogo ('X', 'O', ou 'D' para empate)
-    }
-};
 
 // Classe Player
 class Player {
